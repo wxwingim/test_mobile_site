@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Horib</title>
+</head>
+<body>
+    <header class="header">
+        <img class="top_figure" src="img/top_figure.svg" alt=""/>
+        <div class="header-content">
+            <a href="index.html" class="logo">Horib.ru</a>
+            <a href="#registration" class="header-phone">
+                <div class="header-button">
+                    8-800-333-08-03
+                </div></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="main-screen">
+            <div class="main-screen-content">
+                <div class="main-screen-text">
+                    <h1 class="h1">Присоединяйтесь к нам и получите эксклюзивные условия сотрудничества</h1>
+                    <div class="main-list">
+                        <div class="main-item">
+                            <img class="main-icon" src="img/chart-histogram.png" alt="chart diogramm"/>
+                            <p class="main-text">повышенное вознаграждение за первые продажи</p>
+                        </div>
+                        <div class="main-item">
+                            <img class="main-icon" src="img/time-twenty-four.png" alt="chart diogramm"/>
+                            <p class="main-text">персонального куратора в любое время</p>
+                        </div>
+                        <div class="main-item">
+                            <img class="main-icon" src="img/search.png" alt="chart diogramm"/>
+                            <p class="main-text">индивидуальное рассмотрение «сложных» сделок</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-button-container">
+                    <a href="#registration" class="main-button">Подать заявку</a>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <section class="info-section">
+            <div class="info-container">
+                <div class="info-head">
+                    <h2 class="h2">Преимущества</h2>
+                    <p class="info-subtitle">Наша команда постоянно работает над улучшениями платформы. Мы хотим сделать ее максимально удобной для вас</p>
+                </div>
+                <div class="info-option">
+                    <img src="img/time-twenty-four.png" alt="Поддержка" class="main-icon"/>
+                    <div class="info-option-texts">
+                        <p class="info-head-option">Поддержка</p>
+                        <p class="info-text-option">Поможем вам с любым вопросом в любое время дня и ночи</p>
+                    </div>
+                </div>
+                <div class="info-option">
+                    <img src="img/share.png" alt="Лучшие условия" class="main-icon"/>
+                    <div class="info-option-texts">
+                        <p class="info-head-option">Лучшие условия</p>
+                        <p class="info-text-option">С нами сотрудничает 30+ ведущих страховых компаний. Выбирайте для себя и для клиента оптимальные условия</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-option">
+                    <img src="img/users-alt.png" alt="Система отслеживания клиентов" class="main-icon"/>
+                    <div class="info-option-texts">
+                        <p class="info-head-option">Система отслеживания клиентов</p>
+                        <p class="info-text-option">Заводите карточки с автоматическим отслеживанием статуса по каждому клиенту. Получайте уведомление, если срок полиса клиента подходит к концу</p>
+                    </div>
+                </div>
+                <div class="info-option">
+                    <img src="img/graduation-cap.png" alt="Обучение" class="main-icon"/>
+                    <div class="info-option-texts">
+                        <p class="info-head-option">Обучение</p>
+                        <p class="info-text-option">У нас можно пройти бесплатное обучение по работе платформой. Узнать механики продаж, как работают страховые компании и многое другое</p>
+                    </div>
+                </div>
+                <div class="info-option">
+                    <img src="img/time-fast.png" alt="Скорость" class="main-icon"/>
+                    <div class="info-option-texts">
+                        <p class="info-head-option">Скорость</p>
+                        <p class="info-text-option">Экономьте свое время. Платформа заполнит за вас 75% информации при оформлении полиса ОСАГО и КАСКО</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+
+        <section id="registration" class="form">
+            <div class="form-container">
+                <header class="form-header">
+                    <h2>Регистрируйтесь и получите доступ к эксклюзивному предложению</h2>
+                </header>
+
+                <div class="form-content">
+                    <form id="registration-form" class="register-form" action="/your-endpoint" method="POST">
+                        <div class="form-buttons">
+                            <label>
+                                <input type="radio" name="option" value="Физ. лицо" checked>
+                                <span>Физ. лицо</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="Юр. лицо">
+                                <span>Юр. лицо</span>
+                            </label>
+                        </div>
+
+                        <input type="text" id="fio" name="fio" placeholder="ФИО*" required>
+                      
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон*" required>
+                      
+                        <input type="email" id="email" name="email" placeholder="E-mail*" required>
+                      
+                        <input type="text" id="inn" name="inn" placeholder="ИНН">
+                      
+                        <label for="consent1" class="consent">
+                          <input type="checkbox" id="consent1" name="consent1" required>
+                          Я согласен(-на) на сбор, обработку и передачу моих <a href="./dock/regulation_on_the_processing_of_personal_data.pdf">персональных данных</a>.
+                        </label>
+                      
+                        <label for="consent2" class="consent">
+                          <input type="checkbox" id="consent2" name="consent2" required>
+                          Я прочитал(-а) <a href="./dock/еerms_of_the_contract.pdf">Условия Договора</a> и согласен(-на) с условиями. 
+                        </label>
+                      
+                        <input type="submit" value="Присоединиться">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="index.html" class="logo">Horib.ru</a>
+            <p>
+                Сотрудничество: <br/>
+                тел.: 8-800-333-08-03 <br/>
+                <a href="mailto:partner@horib.ru">partner@horib.ru</a>
+            </p>
+            <p>
+                Ⓒ Общество с ограниченной ответственностью “Горизонт СБ”, ИНН …. ОГРН ……. <br/>
+                Наш адрес: 109240, г. Москва, Большой Ватин пер., д. 3.
+            </p>
+            <p>
+                Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта horib.ru
+Вся представленная на сайте информация носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        const phone = document.getElementById("phone");
+        const maskOptionsPhone = {
+            mask: '+7(000)000-0000',
+            lazy: false
+        } 
+        const mask = new IMask(phone, maskOptionsPhone);
+
+        const fio = document.getElementById("fio");
+        const maskOptionsFio = {
+            mask: /^[а-яА-ЯёЁ\s-]+$/,
+            lazy: false
+        }
+        const mask2 = new IMask(fio, maskOptionsFio);
+
+        const emailInput = document.getElementById("email");
+
+        emailInput.addEventListener("input", function() {
+            const email = emailInput.value;
+            
+            // Проверка формата email-адреса
+            const emailRegex = /^\S+@\S+\.\S+$/;
+            const isValidEmail = emailRegex.test(email);
+            
+            if (!isValidEmail) {
+                emailInput.setCustomValidity("Введите действительный email-адрес");
+            } else {
+                emailInput.setCustomValidity("");
+            }
+        });
+
+
+        function getSelectedRadio() {
+            const radios = document.getElementsByName("option");
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    return i;
+
+                }
+            }
+        }
+
+        const innInput = document.getElementById("inn");
+
+        innInput.addEventListener("input", function() {
+            const inn = innInput.value;
+
+            const innRegex = /^[0-9]{12}$/;
+            
+            if (getSelectedRadio() === 1) {
+                innRegex = /^[0-9]{10}$/;
+            }
+
+            const isValidInn = innRegex.test(inn);
+
+            if (!isValidInn) {
+                innInput.setCustomValidity("Некорректный ИНН");
+            } else {
+                innInput.setCustomValidity("");
+            }
+        });
+
+
+    </script>   
+    <script>
+        const form = document.getElementById('registration-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращение отправки формы по умолчанию
+            // Код для отправки запроса
+            
+            // Перенаправление на другую страницу
+            window.location.href = "/successful_register.html"; // Замените на нужный URL
+        });
+    </script>
+    
+</body>
+</html>

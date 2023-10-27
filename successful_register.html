@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <main class="register">
+        <div class="register-container">
+            <div class="register-content">
+                <div class="register-texts">
+                    <h1>Мы рады, что вы присоединились!</h1>
+                    <p>Мы свяжемся с вами в ближайшее время и сообщим о запуске</p>
+                    <p>А пока, можете порекомендовать нас друзьям </p>
+                </div>
+                <div class="register-button">
+                    <button id="copyButton" data-link="https://example.com">Копировать ссылку</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    const copyButton = document.getElementById('copyButton');
+
+    copyButton.addEventListener('click', function() {
+    const link = copyButton.getAttribute('data-link');
+    const tempInput = document.createElement('input');
+    tempInput.value = link;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('Ссылка скопирована: ' + link);
+    });
+    </script>
+
+</body>
+</html>
